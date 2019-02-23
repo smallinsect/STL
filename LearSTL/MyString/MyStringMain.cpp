@@ -41,13 +41,34 @@ int main(int argv, char **argc){
 	//MyString mstr1(mstr, 3, 2);
 	//cout << mstr1.c_str() << endl;
 
+	//string str("abcdef");
+	//string str1(str);
+	//cout << str1 << endl;
+
+	//MyString mstr("0123456789");
+	//MyString mstr1(mstr);
+	//cout << mstr1.c_str() << endl;
+	//cout << mstr1 << endl;
+
+	//cin >> mstr1;
+	//cout << mstr1;
+
 	string str("abcdef");
-	string str1(str);
+	cout << str[0] << endl;
+	
+	try
+	{
+		cout << str.at(10) << endl;
+	}
+	catch(out_of_range &a)
+	{
+		cout << "方怏埆順" << endl;
+	}
+	string str1 = "最最最";
 	cout << str1 << endl;
-
-	MyString mstr("0123456789");
-	MyString mstr1(mstr);
-	cout << mstr1.c_str() << endl;
-
+	cin >> str1;
+	
+	cout << str1 << endl;
+	printf("込込込");
 	return 0;
 }

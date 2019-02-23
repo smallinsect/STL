@@ -5,6 +5,7 @@
 #define _MYSTRING
 
 #include <iostream>
+using namespace std;
 
 class MyString
 {
@@ -21,8 +22,21 @@ public:
 
 	const char *c_str() const;
 	const size_t c_size() const;
+
+	void operator = (const char *ss);
 public:
 	~MyString();
+public:
+	
+	//输出重载
+	friend ostream &operator << (ostream &os, MyString &str);
+	//输入重载
+	friend istream &operator >> (istream &is, MyString &str);
 };
+
+//输出重载
+//ostream &operator << (ostream &os, MyString &str);
+//输入重载
+//istream &operator >> (istream &is, MyString &str);
 
 #endif

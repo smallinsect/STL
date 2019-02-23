@@ -85,3 +85,52 @@ const size_t MyString::c_size() const
 {
 	return m_length;
 }
+
+void MyString::operator = (const char *ss)
+{
+	size_t length = 0;
+	while(ss[length] != '\0')
+	{
+		++length;
+	}
+	delete[] m_str;
+	m_str = new char[length + 1];
+	for(size_t i = 0; i < length; ++i)
+	{
+		m_str[i] = ss[i];
+	}
+	m_str[length] = '\0';
+	m_length = length;
+}
+
+//输出重载
+ostream &operator << (ostream &os, MyString &str)
+{
+	//os << str.m_str;
+	os << str.c_str();
+	return os;
+}
+//输入重载
+istream &operator >> (istream &is, MyString &str)
+{
+	char ss[20] = "";
+	is >> ss;
+	str = ss;
+	return is;
+}
+
+
+//输出重载
+//ostream &operator << (ostream &os, MyString &str)
+//{
+//	os << str.c_str();
+//	return os;
+//}
+//输入重载
+//istream &operator >> (istream &is, MyString &str)
+//{
+//	char ss[20] = "";
+//	is >> ss;
+//	str = ss;
+//	return is;
+//}

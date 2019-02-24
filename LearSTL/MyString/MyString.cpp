@@ -108,7 +108,7 @@ ostream &operator << (ostream &os, MyString &str)
 {
 	//os << str.m_str;
 	os << str.c_str();
-	return os;
+	return os;  
 }
 //ÊäÈëÖØÔØ
 istream &operator >> (istream &is, MyString &str)

@@ -2,13 +2,60 @@
 #include <vector>
 #include <iostream>
 
+#include <time.h>
+#include <stdlib.h>
+
 #include "MyString.h"
 
 using namespace std;
 
+char letter[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+int letter_num = 26 + 26;
+int random_num = 50;
 
+void Random(){
+	//当前系统时间作为随机种子
+	srand((unsigned int)time(NULL));
+
+	for (int i = 0; i < random_num; ++i){
+		char ch = letter[rand() % letter_num];
+		printf("%c", ch);
+	}
+}
+
+//string迭代器 迭代器失效
+void FunIterator(){
+	string str("VZmhGHuAVmOFtUsCbEDIlVTmgZzfTwFiKWayLPPmTdXKgLKvms");
+	string::iterator ite;
+
+	cout << str << endl;
+
+	//ite = str.begin();
+	//for (int i = 0; i < str.size(); ++i){
+	//	cout << *ite << " ";
+	//	++ite;
+	//}
+
+	//for (int i = 0; i < str.size(); ++i){
+	//	cout << ite[i] << " ";
+	//}
+
+	//for (ite = str.begin(); ite != str.end(); ++ite){
+	//	cout << *ite << " ";
+	//}
+
+	ite = str.begin();
+	str.append("1", 100);
+
+	ite[0] = 'a';
+	
+	puts("");
+}
 
 int main(int argv, char **argc){
+
+	//Random();
+
 	//string str;
 	//const char *cstr = str.c_str();
 
@@ -94,12 +141,26 @@ int main(int argv, char **argc){
 	//cout << str << endl;
 
 	//其它函数
-	string str("abcdef");
-	string str1("abc");
-	char arr[10] = ""; 
+	//string str("abcdef");
+	//string str1("abc");
+	//char arr[10] = ""; 
 
-	int len = str.copy(arr, 14, 2);
-	cout << arr << " " << len << endl;
+	//int len = str.copy(arr, 14, 2);
+	//cout << arr << " " << len << endl;
+
+	//string str("abcdef");
+	//string str1("cd");
+	//cout << str.find(str1) << endl;
+
+	//cout << str.substr(2) << endl;
+
+	//str.swap(str1);
+
+	//cout << str << endl;
+	//cout << str1 << endl;
+	
+	FunIterator();
+
 
 	return 0;
 }

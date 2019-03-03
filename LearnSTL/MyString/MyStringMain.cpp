@@ -52,6 +52,21 @@ void FunIterator(){
 	puts("");
 }
 
+//string通过跌迭代器 使用append erase insert
+void TestIterator(){
+	string str("VZmhGHuAVmOFtUsCbEDIlVTmgZzfTwFiKWayLPPmTdXKgLKvms");
+	string str1("HuAVm");
+
+	cout << str << endl;
+	//str.append(str1.begin(), str1.begin()+1);
+
+	//str.erase(str.begin(), str.begin()+2);
+
+	//str.insert(str.begin(), str1.begin(), str1.end());
+
+	cout << str << endl;
+}
+
 int main(int argv, char **argc){
 
 	//Random();
@@ -159,7 +174,8 @@ int main(int argv, char **argc){
 	//cout << str << endl;
 	//cout << str1 << endl;
 	
-	FunIterator();
+	//FunIterator();
+	TestIterator();
 
 
 	return 0;

@@ -43,3 +43,28 @@ void demo1(){
 	cout << endl;
 
 }
+
+//capacity 容量 不够的容量 新增的容量和编译器有关
+//size 有效元素的个数 resize 重置有效元素个数
+void demo2(){
+	vector<int> v;
+	cout << v.capacity() << endl;
+
+	vector<int> v1(5);
+	cout << v1.capacity() << endl;
+
+	v1.push_back(666666);
+	cout << "capacity=" << v1.capacity() << endl;
+	cout << "size=" << v1.size() << endl;
+
+	//重置容量大小 传入的大小 必须大于当前容量大小
+	v1.reserve(20);
+	v1.resize(21);
+
+	cout << "capacity=" << v1.capacity() << endl;
+	cout << "size=" << v1.size() << endl;
+
+	//判断容器是否为空 空返回true
+	v1.empty();
+
+}

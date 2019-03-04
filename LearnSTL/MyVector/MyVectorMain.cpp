@@ -3,7 +3,8 @@
 
 int main(){
 
-	demo1();
+	//demo1();
+	demo2();
 
 	return 0;
 }

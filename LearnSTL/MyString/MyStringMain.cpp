@@ -1,6 +1,8 @@
 #include <string>
 #include <vector>
 #include <iostream>
+#include <algorithm>
+#include <functional>
 
 #include <time.h>
 #include <stdlib.h>
@@ -65,6 +67,30 @@ void TestIterator(){
 	//str.insert(str.begin(), str1.begin(), str1.end());
 
 	cout << str << endl;
+}
+
+void fun(char c){
+	cout << c << " ";
+}
+
+void FunForeach(){
+	string str("tUsCbEDIlVTmgZzfTwFiKWayLPPm");
+	cout << str << endl;
+
+	//foreach±éÀú
+	for_each(str.begin(), str.end(), fun);
+	cout << endl;
+
+	//ÅÅÐò Ä¬ÈÏÉýÐò
+	sort(str.begin(), str.end());
+	cout << endl;
+	for_each(str.begin(), str.end(), fun);
+	cout << endl;
+
+	//½µÐò
+	sort(str.begin(), str.end(), greater<char>());
+	for_each(str.begin(), str.end(), fun);
+	cout << endl;
 }
 
 int main(int argv, char **argc){
@@ -175,7 +201,8 @@ int main(int argv, char **argc){
 	//cout << str1 << endl;
 	
 	//FunIterator();
-	TestIterator();
+	//TestIterator();
+	FunForeach();
 
 
 	return 0;

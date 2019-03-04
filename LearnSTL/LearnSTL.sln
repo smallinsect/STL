@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LearnSTL", "LearnSTL\LearnS
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MyString", "MyString\MyString.vcxproj", "{E3796FD6-091A-4A41-AADE-D27B88017E0E}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MyVector", "MyVector\MyVector.vcxproj", "{EFD827C1-EFAE-4D1D-8857-905FEE756156}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -21,6 +23,10 @@ Global
 		{E3796FD6-091A-4A41-AADE-D27B88017E0E}.Debug|Win32.Build.0 = Debug|Win32
 		{E3796FD6-091A-4A41-AADE-D27B88017E0E}.Release|Win32.ActiveCfg = Release|Win32
 		{E3796FD6-091A-4A41-AADE-D27B88017E0E}.Release|Win32.Build.0 = Release|Win32
+		{EFD827C1-EFAE-4D1D-8857-905FEE756156}.Debug|Win32.ActiveCfg = Debug|Win32
+		{EFD827C1-EFAE-4D1D-8857-905FEE756156}.Debug|Win32.Build.0 = Debug|Win32
+		{EFD827C1-EFAE-4D1D-8857-905FEE756156}.Release|Win32.ActiveCfg = Release|Win32
+		{EFD827C1-EFAE-4D1D-8857-905FEE756156}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

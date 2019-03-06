@@ -68,3 +68,28 @@ void demo2(){
 	v1.empty();
 
 }
+
+void fun(int i){
+	cout << i << " ";
+}
+
+//·ÃÎÊvectorÔªËØ
+void demo3(){
+
+	vector<int> v;
+
+	for (int i = 0; i < 10; ++i){
+		v.push_back(i);
+	}
+
+	//cout << v[10] << endl;
+
+	//cout << v.at(10) << endl;
+	cout << v.back() << endl;
+
+	//for (vector<int>::iterator ite = v.begin(); ite != v.end(); ++ite){
+	//	cout << *ite << endl;
+	//}
+
+	for_each(v.begin(), v.end(), fun);
+}

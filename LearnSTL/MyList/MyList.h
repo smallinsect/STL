@@ -5,3 +5,5 @@
 #include <algorithm>
 
 using namespace std;
+
+void demo1();

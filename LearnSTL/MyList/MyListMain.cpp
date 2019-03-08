@@ -2,7 +2,7 @@
 
 int main(){
 
-	cout << "àÅàÅ" << endl;
+	demo1();
 
 	system("pause");
 	return 0;

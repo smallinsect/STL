@@ -9,3 +9,4 @@
 using namespace std;
 
 void demo1();
+void demo2();

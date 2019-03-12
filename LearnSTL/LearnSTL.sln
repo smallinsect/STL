@@ -13,6 +13,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MyList", "MyList\MyList.vcx
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MyDeque", "MyDeque\MyDeque.vcxproj", "{0D67AD81-01AB-41D4-B187-4DC7CA2743CC}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MyMap", "MyMap\MyMap.vcxproj", "{4DEF58F6-90E3-4246-8622-10EC5B424937}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -39,6 +41,10 @@ Global
 		{0D67AD81-01AB-41D4-B187-4DC7CA2743CC}.Debug|Win32.Build.0 = Debug|Win32
 		{0D67AD81-01AB-41D4-B187-4DC7CA2743CC}.Release|Win32.ActiveCfg = Release|Win32
 		{0D67AD81-01AB-41D4-B187-4DC7CA2743CC}.Release|Win32.Build.0 = Release|Win32
+		{4DEF58F6-90E3-4246-8622-10EC5B424937}.Debug|Win32.ActiveCfg = Debug|Win32
+		{4DEF58F6-90E3-4246-8622-10EC5B424937}.Debug|Win32.Build.0 = Debug|Win32
+		{4DEF58F6-90E3-4246-8622-10EC5B424937}.Release|Win32.ActiveCfg = Release|Win32
+		{4DEF58F6-90E3-4246-8622-10EC5B424937}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
